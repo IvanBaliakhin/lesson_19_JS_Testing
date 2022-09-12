@@ -1,30 +1,7 @@
-class Mat {
-  constructor(a, b) {
-    this.a = a;
-    this.b = b;
-  }
-
-  sum() {
-    return this.a + this.b;
-  }
-
-  sub() {
-    return this.a - this.b;
-  }
-
-  mul() {
-    return this.a * this.b;
-  }
-}
-
-function defUpperStr(str) {
-  return (str || 'Default text').toUpperCase();
-}
-
 function ageClassification(n) {
   var age;
-age = n < 0 ? null : n <= 24 ? 'детский возраст' : n <= 44 ? 'молодой возраст' : n <= 65 ? 'средний возраст' : n <= 75 ? 'пожилой возраст' : n <= 90 ? 'старческий возраст' : n <= 122 ? 'долгожители' : null;
-return age;
+  age = n < 0 ? null : n <= 24 ? 'детский возраст' : n <= 44 ? 'молодой возраст' : n <= 65 ? 'средний возраст' : n <= 75 ? 'пожилой возраст' : n <= 90 ? 'старческий возраст' : n <= 122 ? 'долгожители' : null;
+  return age;
 }
 
 function weekFn(n) {
